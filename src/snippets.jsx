@@ -10,10 +10,7 @@ function count (string) {
 
   // Shuffle an array with JS methods - good for smaller arrays
   let friends = ['steven','deo','diana','randy','ted']
-  let shuffledFriends = Friends
-  .map((a) => ({sort: Math.random(), value: a}))
-  .sort((a, b) => a.sort - b.sort)
-  .map((a) => a.value)
+  let shuffledFriends = friends.map((a) => ({sort: Math.random(), value: a})).sort((a, b) => a.sort - b.sort).map((a) => a.value)
 
 
 // JS date formatting
